@@ -4,6 +4,20 @@
     box-sizing: border-box;
 }
 
+/* @media (min-width:320px) and (max-width:550px){
+.container{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 70px 0 50px 0;
+        height: 100%;
+        width: 330px;
+        margin: 0 auto;
+    }
+} */
+
 button {
     padding: 26px 80px;
     font-size: 25px;
@@ -213,6 +227,7 @@ select {
 
 .tagline {
     height: 432px;
+
 }
 .tagline .container {
     display: flex;
@@ -513,7 +528,7 @@ select {
 }
 @media (min-width:320px) and (max-width:550px){
     header{
-        width: 100%;
+        width:100%;
         padding: 0px;
     }
     .header__left{
@@ -521,24 +536,37 @@ select {
     }
     .header__left img{
         visibility: hidden;
+        width: 0px;
     }
     #header__navs{
         width: 0px;
         padding: 0px;
     }
     #header__navs a{
+        display: none;
         visibility: hidden;
         width: 0px;
+    }
+    #header__navs select{
+        width: 0px;
+    }
+    #header__navs option{
+        width: 0;
     }
     .header__right{
         width: 0px;
     }
     .header__right button{
         visibility: hidden;
+        width: 0px;
+        margin: 0;
     }
     .banner h1{
-        width: 100%;
+        width: 90%;
         font-size: 60px;
+    }
+    .banner h2{
+        width: 90%;
     }
     .tagline .container{
         display: flex;
@@ -550,14 +578,18 @@ select {
         height: 100%;
     }
     .tagline #content{
-        width: 330px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
         height: 100%;
     }
-    .tagline #content h2{
-        width: 325px;
+    .tagline h2{
+        width: 320px;
     }
     .tagline #content p{
         font-size: 18px;
+        width: 280px;
     }
     .UTP{
        height: 100%;
@@ -639,20 +671,34 @@ select {
         margin-top: 0px;
         height: 210px;
     }
+    .footer img{
+        margin: 0;
+    }
+    .footer h2{
+        margin-top: 10%;
+    }
     .footer .container{
-        margin-left: 0px;
+        margin:0px;
     }
     .footer .lists,.medias{
+        display: none;
         visibility: hidden;
         width: 0px;
     }
-    .footer .container {
-        width: 100%;
+    .footer {
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
+    .footer .logo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
     .footer .medias{
+        display: none;
         width: 0px;
     }
 }
@@ -686,6 +732,9 @@ select {
     }
     #product #second{
         width: 328px;
+    }
+    #product button{
+        margin-top: 4%;
     }
     .feedback #main_text{
         margin-top: 50px;
@@ -726,6 +775,13 @@ select {
         width: 35%;
         margin-right: 3%;
         margin-left: 3%;
+    }
+    .footer ul{
+        width: 90px;
+        font-size: 14px;
+    }
+    .footer h2{
+        margin-left: 10px;
     }
 }
 @media (min-width:1365px) and (max-width : 1400px){
